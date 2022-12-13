@@ -1,0 +1,25 @@
+installe IntelliJ IDEA
+java 19
+postman
+http://localhost:8080/api/references
+{
+    "refId":"djdejdjed"
+}
+in react native 
+post data 
+  useEffect(() => {
+    const requestOptions = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ 'refId': 'ali' })
+    };
+    fetch('http://localhost:8080/api/references', requestOptions)
+      .then(response => response.json())
+      .then(data => setPostId(data.id));
+
+
+
+
+
+  });
+  adb reverse tcp:8081 tcp:8081
